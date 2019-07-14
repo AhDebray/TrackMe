@@ -11,23 +11,23 @@
         <title>TrackMe</title>
     </head>
     <body>
-        <h1>Devices</h1>
-        <table id="devices">
-            <thead>
-                <tr>
-                    <th>User</th>
-                    <th>Device</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+        <div class="container">
+            
+            <h1>Register New Devices</h1>
 
-        <script>
-        const devices = [];
-        devices.push({ user: "Mary", name: "Mary's iPhone" });
-        devices.push({ user: "Alex", name: "Alex's Surface Pro" });
-        devices.push({ user: "Mary", name: "Mary's MacBook" });
-        </script>
+            <div class="form-group">
+                <label for="user">User</label>
+                <input type="text" class="form-control" id="user" />
+            </div>
+
+            <div class="form-group">
+                <label for="name">Device Name</label>
+                <input type="text" class="form-control" id="name" />
+            </div>
+
+            <button class="btn btn-success" id="add-device">Save</button>
+               
+        </div>
         
         <script src="app.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
