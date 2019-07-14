@@ -11,22 +11,21 @@
         <title>TrackMe</title>
     </head>
     <body>
-        <h1>Devices</h1>
-        <table id="devices">
-            <thead>
-                <tr>
-                    <th>User</th>
-                    <th>Device</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-
+        <div class="container">
+            <h1>Devices</h1>
+            <table id="devices" class="table">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Device</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        
         <script>
-        const devices = [];
-        devices.push({ user: "Mary", name: "Mary's iPhone" });
-        devices.push({ user: "Alex", name: "Alex's Surface Pro" });
-        devices.push({ user: "Mary", name: "Mary's MacBook" });
+            const devices = localStorage.getItem('devices') || [] ;
         </script>
         
         <script src="app.js"></script>
